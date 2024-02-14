@@ -49,9 +49,16 @@ header ul li a{
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    color: #F39C12;
 }
 header.sticky ul li a{
     color: #111;
+}
+header.sticky ul li a:hover{
+    color: #F39C12;
 }
 section {
     padding: 100px;
@@ -83,7 +90,7 @@ section {
 }
 .btn{
     position: relative;
-    background: #F39C12;
+    background: #2169f3;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
@@ -97,8 +104,8 @@ section {
     transition: 0.5s;
 }
 .btn:hover{
-    background: red;
-    padding: 15px 35px;
+    background: #F39C12;
+    padding: 10px 20px;
     font-size: 17px;
 }
 .heading{
@@ -110,23 +117,35 @@ section {
 .heading h2{
     font-weight: 600;
     font-size: 30px;
+    
 }
 .content{
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 .contentBx{
     padding-right: 30px;
 }
 .contentBx h3{
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.contentBx p{
+    font-size: 17px;
+    font-style: italic;
 }
 .w50{
     min-width: 50%;
 }
 img{
    max-width: 100%; 
+   transition: 0.5s;
+}
+img:hover{
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .8s ease-in-out;
 }
 .services{
     background: #111;
@@ -151,7 +170,9 @@ img{
 }
 .services .content .servicesBx:hover{
     background: #F39C12;
-    margin: 30px;
+    padding: 45px 25px;
+    margin: 25px;
+
 }
 .services .content .servicesBx img{
     max-width: 80px;
@@ -159,7 +180,13 @@ img{
 }
 .services .content .servicesBx h2{
     font-size: 20px;
+    margin-bottom: 10px;
     font-weight: 600;   
+}
+.services .content .servicesBx p{
+    text-align: justify;
+    margin: 15px;
+    font-size: 15px;
 }
 .work .content{
     display: flex;
@@ -256,12 +283,116 @@ img{
     color: #2196f3;
     margin-bottom: 0;
 }
-.copyright{
+footer {
     background: #000;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+    padding-top: 50px;
 }
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-content p {
+    width: 250px;
+    margin: auto;
+    padding: 7px;
+    color: #fff;
+}
+
+.footer-content ul {
+    text-align: center;
+    color: #fff;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.list li:hover::before {
+    width: 70px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #2196f3;
+}
+
+.social-icons i:hover {
+    color: #2196f3;
+}
+
+.bottom-bar {
+    background: #2196f3;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.bottom-bar p {
+    color: #000;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+
 
 /*Bagian Responsive*/
 
@@ -371,5 +502,18 @@ img{
     }
     .banner{
         padding: 150px 50px 100px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-content {
+        max-width: 100%;
+    }
+    
+    .bottom-bar p{
+        font-size: 12px;
+    }
+    .bottom-bar p{
+        font-size: 10px;
     }
 }
