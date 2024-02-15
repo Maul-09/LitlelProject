@@ -294,7 +294,7 @@ footer
     top: 100%;
     width: 0;
     height: 2px;
-    background: #f18930;
+    background: #2196f3;
     transition-duration: .5s;
 }
 
@@ -324,7 +324,7 @@ a {
 }
 
 a:hover {
-    color: #f18930;
+    color: #2196f3;
 }
 
 .social-icons i:hover {
@@ -458,6 +458,18 @@ a:hover {
 }
 
 @media only screen and (max-width: 480px) {
+    
+    .banner{
+        padding: 100px 25px 50px;
+        width: 100%;
+        min-height: 65vh;
+    }
+    .banner h2{
+        font-size: 2em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
     .footer-content {
         max-width: 100%;
     }
