@@ -171,8 +171,6 @@ img:hover{
 }
 .services .content .servicesBx:hover{
     background: #F39C12;
-    padding: 45px 25px;
-    margin: 25px;
 
 }
 .services .content .servicesBx img{
@@ -180,26 +178,14 @@ img:hover{
     filter: invert(1);
 }
 .services .content .servicesBx h2{
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
     font-weight: 600;   
 }
 .services .content .servicesBx p{
-    text-align: justify;
+    text-align: center;
     margin: 15px;
-    font-size: 15px;
-}
-.work .content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.work .content .workBx{
-    width: 50%;
-    padding: 20px;
-}
-.work .content .workBx img{
-    max-width: 100%;
+    font-size: 17px;
 }
 .testimoni{
     background: #f7f7f7;
@@ -422,10 +408,7 @@ a:hover {
     .content{
         flex-direction: column;
     }
-    .w50{
-        margin-bottom: 30px;
-    }
-    .services .content .servicesBx{
+        .services .content .servicesBx{
         margin: 10px;
     }
     .work .content .workBx{
@@ -464,11 +447,39 @@ a:hover {
         width: 100%;
         min-height: 65vh;
     }
+    .contentBx h3{
+        text-align: center;
+    }
+    .contentBx p{
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .btn{
+        margin-top: 15px;
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .btn:hover{
+        background: #F39C12;
+        color: #000;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
     .banner h2{
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .banner h3{
-        font-size: 1em;
+        font-size: 0.8em;
+    }
+    .w50{
+        align-items: center;
+    }
+    .services .content .servicesBx h2{
+        font-size: 18px;
+    }
+    .services .content .servicesBx p{
+        font-size: 15px;
     }
     .footer-content {
         max-width: 100%;
