@@ -187,37 +187,76 @@ img:hover{
     margin: 15px;
     font-size: 17px;
 }
-.testimoni{
-    background: #f7f7f7;
+.m-skill{
+    background:linear-gradient(45deg, gray, white);
+    padding:15px 9%;
+    padding-bottom: 100px;
 }
-.testimoni .content{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.m-skill .heading{
+    text-align: center;
+    padding: 25px;
+    color:#000;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
-.testimoni .content .testimoniBx{
-    max-width: calc(50% - 40px);
-    padding: 60px 40px;
-    margin: 20px;
-    background: #2169f3;   
+.m-skill .heading h1{
+    font-size: 50px;
 }
-.testimoni .content .testimoniBx p{
-    color: #fff;
-    font-style: italic;
-    font-size: 16px;
-    font-weight: 300;
-}
-.testimoni .content .testimoniBx h3{
-    margin-top: 40px;
-    text-align: end;
-    color: #fff;
-    font-weight: 600;
+.m-skill p{
     font-size: 20px;
-    line-height: 1em;
 }
-.testimoni .content .testimoniBx h3 span{
-    font-size: 14px;
-    font-weight: 400;
+
+.m-skill .box-skill{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.m-skill .box-skill .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.m-skill .box-skill .box img{
+    height: 80px;
+}
+
+.m-skill .box-skill .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.m-skill .box-skill .box p{
+    color: #000;
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.m-skill .box-skill .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 15px;
+    padding: 8px 25px;
+}
+
+.m-skill .box-skill .box .btn:hover{
+    letter-spacing: 1px;
+    background: #F39C12;
+    
+}
+
+.m-skill .box-skill .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+
 }
 footer 
 {
@@ -429,7 +468,7 @@ a:hover {
     }   
 }
 
-@media (max-width: 600){
+@media (max-width:768px){
     header,
     header.sticky{
         padding: 20px 20px;
@@ -438,7 +477,11 @@ a:hover {
     .banner{
         padding: 150px 50px 100px;
     }
-}
+
+    .m-skill{
+        padding:20px;
+    }
+}   
 
 @media only screen and (max-width: 480px) {
     
@@ -452,13 +495,13 @@ a:hover {
     }
     .contentBx p{
         text-align: center;
-        margin-bottom: 10px;
         font-size: 15px;
     }
     .btn{
         margin-top: 15px;
         padding: 10px 20px;
         font-size: 10px;
+        font-weight: 600;
     }
     .btn:hover{
         background: #F39C12;
@@ -470,10 +513,11 @@ a:hover {
         font-size: 1.8em;
     }
     .banner h3{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .w50{
         align-items: center;
+        padding: 15px;
     }
     .services .content .servicesBx h2{
         font-size: 18px;
